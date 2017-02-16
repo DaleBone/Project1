@@ -1,3 +1,41 @@
 h1{
+    font-family: "Goudy Old Style";
+}
 
+body{
+    background-color: silver;
+}
+div{
+    padding: 20px;
+    margin: 10px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: groove;
+    border-color: mediumpurple;
+    background-color: gainsboro;
+}
+
+p{
+    color: mediumpurple;
+}
+
+ul{
+    color: mediumpurple;
+}
+
+h2{
+    color: mediumpurple;
+}
+
+.jumbotron{
+    background-image: url(bob.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: mediumpurple;
+}
+
+h3{
+    color: mediumpurple;
 }
