@@ -6,7 +6,7 @@ body{
     background-color: whitesmoke;
 }
 div{
-    padding: 10px;
+    padding: 10px;                      /*sets the padding and margins for the divs*/
     margin: 5px;
     background-color: whitesmoke;
 }
@@ -24,12 +24,13 @@ ul{
 h2{
     color: darkgoldenrod;
     font-family: "Goudy Old Style";
+
 }
 
 .jumbotron{
-    background-image: url(goldbackground.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
+    background-image: url(goldbackground.jpg);      /*sets the background picture in the jumbotron*/
+    background-repeat: repeat;                      /*Has the picture repeat itself*/
+    background-position: center;                    /*centers the picture*/
     color: whitesmoke;
 }
 
@@ -41,7 +42,7 @@ h3{
     font-family: "Goudy Old Style";
     font-weight: bold;
     font-size: larger;
-    border-style: solid;
+    border-style: solid;                    /*sets the border style, color, and size. this line and the five below it*/
     border-color: darkgoldenrod;
     border-right-width: 2px;
     border-left-width: 2px;
@@ -59,4 +60,9 @@ h3{
 
 .picspage{
     font-family: "Goudy Old Style";
+}
+
+u{
+    text-decoration: none;
+    border-bottom: 1px solid darkgoldenrod;
 }

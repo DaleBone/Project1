@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Prim Studio Location</title>
+    <title>Prim Location</title>
 
     <style>                 /*This determines the map's size*/
         #map {
-            height: 400px;
+            height: 500px;
             width: 99%;
         }
     </style>
@@ -18,33 +18,39 @@
 </head>
 
 <body>
-    <h1>Prim Studio at Sola Salons</h1>
+    <h1>Prim at Sola Salons</h1>
     <div id="map"></div>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvCowrzL-FOjAtcBP9LQ3iqDPSgqX_gWE&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvCowrzL-FOjAtcBP9LQ3iqDPSgqX_gWE&callback=initMap"> <!--loads the map from Google-->
     </script>
 
 
     <script>
         function initMap() {
-            var primstud ={lat: 45.013186, lng: -93.179394};
+            var primstud ={lat: 45.013186, lng: -93.179394};  <!--Variable with Sola lat and lng, used to set the center and marker on the map-->
 
             var map = new google.maps.Map(document.getElementById("map"), {
-                zoom : 13,
-                mapTypeId : google.maps.MapTypeId.HYBRID,
-                center : primstud
+                zoom : 13,                                              <!--Sets the zoom amount-->
+                mapTypeId : google.maps.MapTypeId.HYBRID,               <!--Sets the map as a hybrid map-->
+                center : primstud,                                       /*sets the center of the map to primstud variable*/
+                disableDefaultUI: true
             });
 
 
-            var markerPrim = new google.maps.Marker({
+            var markerPrim = new google.maps.Marker({                   <!--Sets the marker on the primstud variable-->
                 position: primstud,
                 map: map
             });
         }
     </script>
 <div>
-    <a href="primmain.html">Home Page</a>
+    <a href="primmain.html">Back to Home Page</a>               <!--Link back to the home page-->
 </div>
-
+<div>
+    <a href="https://www.vagaro.com/primsalon47" target="_blank">Schedule an Appointment!</a> <!--Link to Vagaro website-->
+</div>
+<div>
+    <a href="primmain.html#picspage">To Gallery</a>
+</div>
 </body>
 </html>
