@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prim Studio Location</title>
+
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mapstyle.css">
+</head>
+
+<body>
+    <h1>Prim Studio at Sola Salon</h1>
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvCowrzL-FOjAtcBP9LQ3iqDPSgqX_gWE&callback=initMap">
+    </script>
+
+
+    <script>
+        function initMap() {
+            var primstud ={lat: 45.013186, lng: -93.179394};
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom : 13,
+                mapTypeId : google.maps.MapTypeId.HYBRID,
+                center : primstud
+            });
+
+            //And create the map, with the options specified. It will be automatically added to the page.
+            //var map = new google.maps.Map(mapDiv, mapOptions);
+
+            var markerPrim = new google.maps.Marker({
+                position: primstud,
+                map: map
+            });
+        }
+    </script>
+
+
+</body>
+</html>
