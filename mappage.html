@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>Prim Studio Location</title>
 
-    <style>
+    <style>                 /*This determines the map's size*/
         #map {
             height: 400px;
-            width: 100%;
+            width: 99%;
         }
     </style>
 
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <h1>Prim Studio at Sola Salon</h1>
+    <h1>Prim Studio at Sola Salons</h1>
     <div id="map"></div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvCowrzL-FOjAtcBP9LQ3iqDPSgqX_gWE&callback=initMap">
@@ -35,8 +35,6 @@
                 center : primstud
             });
 
-            //And create the map, with the options specified. It will be automatically added to the page.
-            //var map = new google.maps.Map(mapDiv, mapOptions);
 
             var markerPrim = new google.maps.Marker({
                 position: primstud,
@@ -44,7 +42,9 @@
             });
         }
     </script>
-
+<div>
+    <a href="primmain.html">Home Page</a>
+</div>
 
 </body>
 </html>

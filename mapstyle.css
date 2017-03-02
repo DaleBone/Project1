@@ -1,8 +1,13 @@
 h1{
-    color: whitesmoke;
-    font-family: "tahoma";
+    color: darkgoldenrod;
+    font-family: "Goudy Old Style";
 }
 
 body{
-    background-color: mediumpurple;
+    background-color: whitesmoke;
+}
+
+div {
+    padding: 10px;
+    margin: 5px;
 }

@@ -8,44 +8,55 @@ body{
 div{
     padding: 10px;
     margin: 5px;
-    border-bottom-width: 1px;
-    border-top-width: 1px;
-    border-left-width: 2px;
-    border-right-width: 2px;
-    border-style: groove;
-    border-color: mediumpurple;
     background-color: whitesmoke;
 }
 
 p{
-    color: mediumpurple;
+    color: darkgoldenrod;
 }
 
 ul{
-    color: mediumpurple;
-    font-family: "tahoma";
+    color: darkgoldenrod;
+    font-family: "Goudy Old Style";
+    font-size: larger;
 }
 
 h2{
-    color: mediumpurple;
-    font-family: "tahoma";
+    color: darkgoldenrod;
+    font-family: "Goudy Old Style";
 }
 
 .jumbotron{
-    background-image: url(brickback.jpg);
+    background-image: url(goldbackground.jpg);
     background-repeat: no-repeat;
     background-position: left top;
     color: whitesmoke;
 }
 
 h3{
-    color: mediumpurple;
-    font-family: "tahoma";
+    color: darkgoldenrod;
+    font-family: "Goudy Old Style";
 }
 .about_section{
-    font-family: "Bradley Hand ITC";
+    font-family: "Goudy Old Style";
+    font-weight: bold;
+    font-size: larger;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 
 .directions{
-    font-family: "tahoma";
+    font-family: "Goudy Old Style";
+}
+
+.appointment{
+    font-family: "Goudy Old Style";
+}
+
+.picspage{
+    font-family: "Goudy Old Style";
 }
